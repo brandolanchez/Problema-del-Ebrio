@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    
+    <title>Ejercicio del Ebrio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div class="cont-title">
+          <h1>El problema del EBRIO</h1>
+          <h4>La coordenada X representa la dirección este-oeste y la coordenada Y represente la dirección norte-sur. 
+            Cada vez que se mueva hacia el este incrementamos el valor de de X en uno y cada vez que se mueva hacia el oeste decrementamos el valor de x también en uno. 
+            Cada vez que se mueva hacia el norte incrementamos Y en uno y cada vez que se mueva hacia el sur decrementamos Y en uno. Si iniciamos la simulación en la posición (0,0), podemos establecer una relación entre cualquier punto donde se encuentre y la posición inicial.</h4>
+            <br>
+            <h4>            Para la eleccion del numero aleatorio se de probabilidad a evalaur, se Utilizo el metodo Ramdom</h4>
+        </div>
+        <br>
+        <button id="Calcular" class="btn btn-success m-3" type="button">
+          Calcular
+        </button>
+        <button id="Reiniciar" class="btn btn-info m-3" type="button">
+            Reiniciar Tabla
+          </button>
+          <br>
+
+        <div class="board"></div>
+        <div class="borrachoCont">
+          <div class="borracho" id="borracho"></div>
+        </div>
+        <div class="centroCont">
+          <div class="centro" id="centro"></div>
+        </div>
+        
+        <br>
+     
+      <table class="table table-hover">
+        <thead>
+            <tr>
+              <th scope="col">Numero cuadras recorridas</th>
+              <th scope="col">Número Aleatorio</th>
+              <th scope="col">Posicion X/Y</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+          </tbody>
+      </table>
+      
+<p>Si al finalizar el recorrido de las 10 cuadras la suma de X y Y resulta igual a 2 entonces el borracho terminó a una distancia igual a 2 dos calles de donde lo empezó.
+
+</p>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
